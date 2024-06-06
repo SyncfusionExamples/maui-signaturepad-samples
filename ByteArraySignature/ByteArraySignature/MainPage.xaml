@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ByteArraySignature.MainPage"
+             xmlns:sign="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad">
+
+    <VerticalStackLayout Padding="50,0,50,0" Spacing="10">
+        <Label Text="Signature:" FontSize="20" FontAttributes="Bold" FontFamily="OpenSansSemibold"/>
+        <Frame HeightRequest="250" WidthRequest="300">
+            <sign:SfSignaturePad x:Name="signaturePad" 
+                                 Background="WhiteSmoke" 
+                                 HeightRequest="200"
+                                 DrawCompleted="SfSignaturePad_DrawCompleted"/>
+        </Frame>
+        <Label Text="Save Signature as Byte Array:" 
+               FontSize="20" FontAttributes="Bold" 
+               FontFamily="OpenSansSemibold"/>
+        <Frame HeightRequest="250" WidthRequest="300">
+            <Image x:Name="image" HeightRequest="250"/>
+        </Frame>
+    </VerticalStackLayout>
+
+</ContentPage>
