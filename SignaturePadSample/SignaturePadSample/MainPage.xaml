@@ -8,7 +8,7 @@
         <Frame HeightRequest="300" WidthRequest="400">
             <signaturePad:SfSignaturePad x:Name="signaturePad" 
                                          StrokeColor="GreenYellow" 
-                                         BackgroundColor="White" />
+                                         Background="White" />
         </Frame>
         <Button Text="Save" Clicked="Button_Clicked"/>
     </StackLayout>
