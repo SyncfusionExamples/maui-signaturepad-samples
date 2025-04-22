@@ -5,10 +5,10 @@
              xmlns:signaturePad="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad">
 
     <StackLayout Spacing="20" VerticalOptions="Center">
-        <Frame HeightRequest="300" WidthRequest="400">
+        <Border HeightRequest="300" WidthRequest="400">
             <signaturePad:SfSignaturePad x:Name="signaturePad" 
                                          Background="White" />
-        </Frame>
+        </Border>
         <Button Text="Save" Clicked="SaveButton_Clicked"/>
     </StackLayout>
 
