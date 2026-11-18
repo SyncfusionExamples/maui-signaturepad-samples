@@ -1,0 +1,11 @@
+<Shell
+    x:Class="SignaturePad.AppShell"
+    xmlns:local="clr-namespace:SignaturePad"
+    Title="SignaturePad">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

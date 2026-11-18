@@ -1,0 +1,49 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignaturePad.MainPage"
+             xmlns:sp="clr-namespace:Syncfusion.Maui.SignaturePad;assembly=Syncfusion.Maui.SignaturePad">
+    <Grid RowDefinitions="Auto,220,Auto,Auto,Auto,Auto,Auto"
+          RowSpacing="12"
+          Padding="16">
+
+        <Label Text="Scenario 1: Draw a signature, save it as JSON stroke (point) data using ExportStrokeData, then reload it with LoadFromStrokeData (string and stream overloads)."
+               FontSize="14"
+               LineBreakMode="WordWrap" />
+
+        <Border Grid.Row="1"
+                Stroke="LightGray"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle">
+            <sp:SfSignaturePad x:Name="signaturePad"
+                               Background="White"
+                               StrokeColor="Black"
+                               MinimumStrokeThickness="1"
+                               MaximumStrokeThickness="5"
+                               VerticalOptions="Fill" />
+        </Border>
+
+        <Label Grid.Row="2"
+               x:Name="statusLabel"
+               Text="Draw a signature, then press Save."
+               FontSize="13"
+               TextColor="Gray" />
+
+        <Button Grid.Row="3"
+                Text="Save (ExportStrokeData)"
+                Clicked="OnSaveClicked" />
+
+        <Button Grid.Row="4"
+                Text="Clear pad"
+                Clicked="OnClearClicked" />
+
+        <Button Grid.Row="5"
+                Text="Reload from string"
+                Clicked="OnLoadFromStringClicked" />
+
+        <Button Grid.Row="6"
+                Text="Reload from stream"
+                Clicked="OnLoadFromStreamClicked" />
+
+    </Grid>
+
+</ContentPage>
